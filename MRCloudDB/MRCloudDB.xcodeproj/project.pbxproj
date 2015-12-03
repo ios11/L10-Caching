@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A42BF119B8798300CFA60F /* NSError+MRCNodeDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21A42BF019B8798300CFA60F /* NSError+MRCNodeDB.mm */; };
+		21C48F9E19C2CDBB00461A34 /* MRCNode+MRCNodeDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C48F9D19C2CDBB00461A34 /* MRCNode+MRCNodeDB.m */; };
+		21D8591B195FF78200EDA2AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D8591A195FF78200EDA2AA /* Foundation.framework */; };
+		21D8591D195FF78200EDA2AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D8591C195FF78200EDA2AA /* CoreGraphics.framework */; };
+		21D8591F195FF78200EDA2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D8591E195FF78200EDA2AA /* UIKit.framework */; };
+		21D85925195FF78200EDA2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21D85923195FF78200EDA2AA /* InfoPlist.strings */; };
+		21D85927195FF78200EDA2AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85926195FF78200EDA2AA /* main.m */; };
+		21D8592B195FF78200EDA2AA /* MRCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8592A195FF78200EDA2AA /* MRCAppDelegate.m */; };
+		21D8592D195FF78200EDA2AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D8592C195FF78200EDA2AA /* Images.xcassets */; };
+		21D85934195FF78200EDA2AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D85933195FF78200EDA2AA /* XCTest.framework */; };
+		21D85935195FF78200EDA2AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D8591A195FF78200EDA2AA /* Foundation.framework */; };
+		21D85936195FF78200EDA2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D8591E195FF78200EDA2AA /* UIKit.framework */; };
+		21D8593E195FF78200EDA2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21D8593C195FF78200EDA2AA /* InfoPlist.strings */; };
+		21D85940195FF78200EDA2AA /* MRCloudDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8593F195FF78200EDA2AA /* MRCloudDBTests.m */; };
+		21D85950195FFB7100EDA2AA /* MRCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8594B195FFB7100EDA2AA /* MRCNode.m */; };
+		21D85952195FFB7100EDA2AA /* MRCNodeLevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21D8594F195FFB7100EDA2AA /* MRCNodeLevelDB.mm */; };
+		21D85957195FFFD500EDA2AA /* NSError+MRCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85956195FFFD500EDA2AA /* NSError+MRCSDK.m */; };
+		21D8599B1960437100EDA2AA /* NSBundle+MRCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8599A1960437100EDA2AA /* NSBundle+MRCSDK.m */; };
+		21D8599E1960437900EDA2AA /* NSString+MRCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8599D1960437900EDA2AA /* NSString+MRCSDK.m */; };
+		21D859A41960666E00EDA2AA /* MRCDefaultErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D859A31960666E00EDA2AA /* MRCDefaultErrorHandler.m */; };
+		21E5EAAC1A4423F8006D899D /* MRCNodeSQLDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C48F9619C0684500461A34 /* MRCNodeSQLDB.m */; };
+		4712CE1E1997AE8600299FE3 /* MRCNodeDBSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4712CE1D1997AE8600299FE3 /* MRCNodeDBSchema.mm */; };
+		956C906191634A03B7500D9C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94122F302D1C43D7847F64B9 /* libPods.a */; };
+		E9FB8E981B94EEEB0083A3BE /* MRCNodeLMDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9FB8E971B94EEEB0083A3BE /* MRCNodeLMDB.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21D85937195FF78200EDA2AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D8590F195FF78200EDA2AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21D85916195FF78200EDA2AA;
+			remoteInfo = MRCloudDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0032F6E708794D47F50D4905 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		21A42BEF19B8798300CFA60F /* NSError+MRCNodeDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MRCNodeDB.h"; sourceTree = "<group>"; };
+		21A42BF019B8798300CFA60F /* NSError+MRCNodeDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSError+MRCNodeDB.mm"; sourceTree = "<group>"; };
+		21C48F9519C0684500461A34 /* MRCNodeSQLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNodeSQLDB.h; sourceTree = "<group>"; };
+		21C48F9619C0684500461A34 /* MRCNodeSQLDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCNodeSQLDB.m; sourceTree = "<group>"; };
+		21C48F9819C06D2E00461A34 /* MRCNodeDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCNodeDB.h; sourceTree = "<group>"; };
+		21C48F9C19C2CDBB00461A34 /* MRCNode+MRCNodeDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRCNode+MRCNodeDB.h"; sourceTree = "<group>"; };
+		21C48F9D19C2CDBB00461A34 /* MRCNode+MRCNodeDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRCNode+MRCNodeDB.m"; sourceTree = "<group>"; };
+		21D85917195FF78200EDA2AA /* MRCloudDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRCloudDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D8591A195FF78200EDA2AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21D8591C195FF78200EDA2AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21D8591E195FF78200EDA2AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21D85922195FF78200EDA2AA /* MRCloudDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRCloudDB-Info.plist"; sourceTree = "<group>"; };
+		21D85924195FF78200EDA2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21D85926195FF78200EDA2AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21D85928195FF78200EDA2AA /* MRCloudDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRCloudDB-Prefix.pch"; sourceTree = "<group>"; };
+		21D85929195FF78200EDA2AA /* MRCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCAppDelegate.h; sourceTree = "<group>"; };
+		21D8592A195FF78200EDA2AA /* MRCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCAppDelegate.m; sourceTree = "<group>"; };
+		21D8592C195FF78200EDA2AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21D85932195FF78200EDA2AA /* MRCloudDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRCloudDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D85933195FF78200EDA2AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21D8593B195FF78200EDA2AA /* MRCloudDBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRCloudDBTests-Info.plist"; sourceTree = "<group>"; };
+		21D8593D195FF78200EDA2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21D8593F195FF78200EDA2AA /* MRCloudDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCloudDBTests.m; sourceTree = "<group>"; };
+		21D8594A195FFB7100EDA2AA /* MRCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNode.h; sourceTree = "<group>"; };
+		21D8594B195FFB7100EDA2AA /* MRCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCNode.m; sourceTree = "<group>"; };
+		21D8594E195FFB7100EDA2AA /* MRCNodeLevelDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNodeLevelDB.h; sourceTree = "<group>"; };
+		21D8594F195FFB7100EDA2AA /* MRCNodeLevelDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MRCNodeLevelDB.mm; sourceTree = "<group>"; };
+		21D85954195FFFD500EDA2AA /* MRCExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCExceptions.h; sourceTree = "<group>"; };
+		21D85955195FFFD500EDA2AA /* NSError+MRCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MRCSDK.h"; sourceTree = "<group>"; };
+		21D85956195FFFD500EDA2AA /* NSError+MRCSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MRCSDK.m"; sourceTree = "<group>"; };
+		21D859991960437100EDA2AA /* NSBundle+MRCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MRCSDK.h"; sourceTree = "<group>"; };
+		21D8599A1960437100EDA2AA /* NSBundle+MRCSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MRCSDK.m"; sourceTree = "<group>"; };
+		21D8599C1960437900EDA2AA /* NSString+MRCSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MRCSDK.h"; sourceTree = "<group>"; };
+		21D8599D1960437900EDA2AA /* NSString+MRCSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MRCSDK.m"; sourceTree = "<group>"; };
+		21D859A11960664B00EDA2AA /* MRCErrorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCErrorHandler.h; sourceTree = "<group>"; };
+		21D859A21960666E00EDA2AA /* MRCDefaultErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCDefaultErrorHandler.h; sourceTree = "<group>"; };
+		21D859A31960666E00EDA2AA /* MRCDefaultErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCDefaultErrorHandler.m; sourceTree = "<group>"; };
+		21F0B9971A4B19BE00E6ABC8 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		432DD26474F710EEA0D21105 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4712CE1C1997AD2200299FE3 /* MRCNodeDBSchema.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCNodeDBSchema.h; sourceTree = "<group>"; };
+		4712CE1D1997AE8600299FE3 /* MRCNodeDBSchema.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MRCNodeDBSchema.mm; sourceTree = "<group>"; };
+		94122F302D1C43D7847F64B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FB8E961B94EEEB0083A3BE /* MRCNodeLMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNodeLMDB.h; sourceTree = "<group>"; };
+		E9FB8E971B94EEEB0083A3BE /* MRCNodeLMDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MRCNodeLMDB.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21D85914195FF78200EDA2AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D8591D195FF78200EDA2AA /* CoreGraphics.framework in Frameworks */,
+				21D8591F195FF78200EDA2AA /* UIKit.framework in Frameworks */,
+				21D8591B195FF78200EDA2AA /* Foundation.framework in Frameworks */,
+				956C906191634A03B7500D9C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D8592F195FF78200EDA2AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D85934195FF78200EDA2AA /* XCTest.framework in Frameworks */,
+				21D85936195FF78200EDA2AA /* UIKit.framework in Frameworks */,
+				21D85935195FF78200EDA2AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21D8590E195FF78200EDA2AA = {
+			isa = PBXGroup;
+			children = (
+				21D85920195FF78200EDA2AA /* MRCloudDB */,
+				21D85939195FF78200EDA2AA /* MRCloudDBTests */,
+				21D85919195FF78200EDA2AA /* Frameworks */,
+				21D85918195FF78200EDA2AA /* Products */,
+				D021958BE8F423DB1C209EEF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		21D85918195FF78200EDA2AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21D85917195FF78200EDA2AA /* MRCloudDB.app */,
+				21D85932195FF78200EDA2AA /* MRCloudDBTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21D85919195FF78200EDA2AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F0B9971A4B19BE00E6ABC8 /* libcommonCrypto.dylib */,
+				21D8591A195FF78200EDA2AA /* Foundation.framework */,
+				21D8591C195FF78200EDA2AA /* CoreGraphics.framework */,
+				21D8591E195FF78200EDA2AA /* UIKit.framework */,
+				21D85933195FF78200EDA2AA /* XCTest.framework */,
+				94122F302D1C43D7847F64B9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21D85920195FF78200EDA2AA /* MRCloudDB */ = {
+			isa = PBXGroup;
+			children = (
+				21D85949195FFB7100EDA2AA /* NodeProvider */,
+				21D85953195FFFD500EDA2AA /* Utility */,
+				21D85929195FF78200EDA2AA /* MRCAppDelegate.h */,
+				21D8592A195FF78200EDA2AA /* MRCAppDelegate.m */,
+				21D8592C195FF78200EDA2AA /* Images.xcassets */,
+				21D85921195FF78200EDA2AA /* Supporting Files */,
+			);
+			path = MRCloudDB;
+			sourceTree = "<group>";
+		};
+		21D85921195FF78200EDA2AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21D85922195FF78200EDA2AA /* MRCloudDB-Info.plist */,
+				21D85923195FF78200EDA2AA /* InfoPlist.strings */,
+				21D85926195FF78200EDA2AA /* main.m */,
+				21D85928195FF78200EDA2AA /* MRCloudDB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21D85939195FF78200EDA2AA /* MRCloudDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				21D8593F195FF78200EDA2AA /* MRCloudDBTests.m */,
+				21D8593A195FF78200EDA2AA /* Supporting Files */,
+			);
+			path = MRCloudDBTests;
+			sourceTree = "<group>";
+		};
+		21D8593A195FF78200EDA2AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21D8593B195FF78200EDA2AA /* MRCloudDBTests-Info.plist */,
+				21D8593C195FF78200EDA2AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21D85949195FFB7100EDA2AA /* NodeProvider */ = {
+			isa = PBXGroup;
+			children = (
+				21D8594A195FFB7100EDA2AA /* MRCNode.h */,
+				21D8594B195FFB7100EDA2AA /* MRCNode.m */,
+				21C48F9C19C2CDBB00461A34 /* MRCNode+MRCNodeDB.h */,
+				21C48F9D19C2CDBB00461A34 /* MRCNode+MRCNodeDB.m */,
+				21C48F9819C06D2E00461A34 /* MRCNodeDB.h */,
+				21D8594E195FFB7100EDA2AA /* MRCNodeLevelDB.h */,
+				21D8594F195FFB7100EDA2AA /* MRCNodeLevelDB.mm */,
+				4712CE1C1997AD2200299FE3 /* MRCNodeDBSchema.h */,
+				4712CE1D1997AE8600299FE3 /* MRCNodeDBSchema.mm */,
+				21C48F9519C0684500461A34 /* MRCNodeSQLDB.h */,
+				21C48F9619C0684500461A34 /* MRCNodeSQLDB.m */,
+				E9FB8E961B94EEEB0083A3BE /* MRCNodeLMDB.h */,
+				E9FB8E971B94EEEB0083A3BE /* MRCNodeLMDB.mm */,
+				21A42BEF19B8798300CFA60F /* NSError+MRCNodeDB.h */,
+				21A42BF019B8798300CFA60F /* NSError+MRCNodeDB.mm */,
+			);
+			path = NodeProvider;
+			sourceTree = "<group>";
+		};
+		21D85953195FFFD500EDA2AA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				21D859A11960664B00EDA2AA /* MRCErrorHandler.h */,
+				21D85954195FFFD500EDA2AA /* MRCExceptions.h */,
+				21D859991960437100EDA2AA /* NSBundle+MRCSDK.h */,
+				21D8599A1960437100EDA2AA /* NSBundle+MRCSDK.m */,
+				21D85955195FFFD500EDA2AA /* NSError+MRCSDK.h */,
+				21D85956195FFFD500EDA2AA /* NSError+MRCSDK.m */,
+				21D8599C1960437900EDA2AA /* NSString+MRCSDK.h */,
+				21D8599D1960437900EDA2AA /* NSString+MRCSDK.m */,
+				21D859A21960666E00EDA2AA /* MRCDefaultErrorHandler.h */,
+				21D859A31960666E00EDA2AA /* MRCDefaultErrorHandler.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D021958BE8F423DB1C209EEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0032F6E708794D47F50D4905 /* Pods.debug.xcconfig */,
+				432DD26474F710EEA0D21105 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21D85916195FF78200EDA2AA /* MRCloudDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D85943195FF78200EDA2AA /* Build configuration list for PBXNativeTarget "MRCloudDB" */;
+			buildPhases = (
+				D3A09F9AA47A4FA98B380A61 /* Check Pods Manifest.lock */,
+				21D85913195FF78200EDA2AA /* Sources */,
+				21D85914195FF78200EDA2AA /* Frameworks */,
+				21D85915195FF78200EDA2AA /* Resources */,
+				198A8E31581E4023B9F38962 /* Copy Pods Resources */,
+				9B48606F1293B31C93767C7B /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRCloudDB;
+			productName = MRCloudDB;
+			productReference = 21D85917195FF78200EDA2AA /* MRCloudDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21D85931195FF78200EDA2AA /* MRCloudDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D85946195FF78200EDA2AA /* Build configuration list for PBXNativeTarget "MRCloudDBTests" */;
+			buildPhases = (
+				21D8592E195FF78200EDA2AA /* Sources */,
+				21D8592F195FF78200EDA2AA /* Frameworks */,
+				21D85930195FF78200EDA2AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21D85938195FF78200EDA2AA /* PBXTargetDependency */,
+			);
+			name = MRCloudDBTests;
+			productName = MRCloudDBTests;
+			productReference = 21D85932195FF78200EDA2AA /* MRCloudDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21D8590F195FF78200EDA2AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MRC;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Mail.Ru Group";
+				TargetAttributes = {
+					21D85931195FF78200EDA2AA = {
+						TestTargetID = 21D85916195FF78200EDA2AA;
+					};
+				};
+			};
+			buildConfigurationList = 21D85912195FF78200EDA2AA /* Build configuration list for PBXProject "MRCloudDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 21D8590E195FF78200EDA2AA;
+			productRefGroup = 21D85918195FF78200EDA2AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21D85916195FF78200EDA2AA /* MRCloudDB */,
+				21D85931195FF78200EDA2AA /* MRCloudDBTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21D85915195FF78200EDA2AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D85925195FF78200EDA2AA /* InfoPlist.strings in Resources */,
+				21D8592D195FF78200EDA2AA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D85930195FF78200EDA2AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D8593E195FF78200EDA2AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		198A8E31581E4023B9F38962 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B48606F1293B31C93767C7B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A09F9AA47A4FA98B380A61 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21D85913195FF78200EDA2AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D8599B1960437100EDA2AA /* NSBundle+MRCSDK.m in Sources */,
+				21D85927195FF78200EDA2AA /* main.m in Sources */,
+				21D859A41960666E00EDA2AA /* MRCDefaultErrorHandler.m in Sources */,
+				21D8599E1960437900EDA2AA /* NSString+MRCSDK.m in Sources */,
+				21A42BF119B8798300CFA60F /* NSError+MRCNodeDB.mm in Sources */,
+				21D85950195FFB7100EDA2AA /* MRCNode.m in Sources */,
+				21C48F9E19C2CDBB00461A34 /* MRCNode+MRCNodeDB.m in Sources */,
+				21E5EAAC1A4423F8006D899D /* MRCNodeSQLDB.m in Sources */,
+				21D8592B195FF78200EDA2AA /* MRCAppDelegate.m in Sources */,
+				21D85952195FFB7100EDA2AA /* MRCNodeLevelDB.mm in Sources */,
+				E9FB8E981B94EEEB0083A3BE /* MRCNodeLMDB.mm in Sources */,
+				4712CE1E1997AE8600299FE3 /* MRCNodeDBSchema.mm in Sources */,
+				21D85957195FFFD500EDA2AA /* NSError+MRCSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D8592E195FF78200EDA2AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D85940195FF78200EDA2AA /* MRCloudDBTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21D85938195FF78200EDA2AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21D85916195FF78200EDA2AA /* MRCloudDB */;
+			targetProxy = 21D85937195FF78200EDA2AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21D85923195FF78200EDA2AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D85924195FF78200EDA2AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21D8593C195FF78200EDA2AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D8593D195FF78200EDA2AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21D85941195FF78200EDA2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavel Osipov (3AHZ43CX6F)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		21D85942195FF78200EDA2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavel Osipov (3AHZ43CX6F)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		21D85944195FF78200EDA2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0032F6E708794D47F50D4905 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRCloudDB/MRCloudDB-Prefix.pch";
+				INFOPLIST_FILE = "MRCloudDB/MRCloudDB-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21D85945195FF78200EDA2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432DD26474F710EEA0D21105 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRCloudDB/MRCloudDB-Prefix.pch";
+				INFOPLIST_FILE = "MRCloudDB/MRCloudDB-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21D85947195FF78200EDA2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRCloudDB.app/MRCloudDB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRCloudDB/MRCloudDB-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MRCloudDBTests/MRCloudDBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21D85948195FF78200EDA2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MRCloudDB.app/MRCloudDB";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRCloudDB/MRCloudDB-Prefix.pch";
+				INFOPLIST_FILE = "MRCloudDBTests/MRCloudDBTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21D85912195FF78200EDA2AA /* Build configuration list for PBXProject "MRCloudDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D85941195FF78200EDA2AA /* Debug */,
+				21D85942195FF78200EDA2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D85943195FF78200EDA2AA /* Build configuration list for PBXNativeTarget "MRCloudDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D85944195FF78200EDA2AA /* Debug */,
+				21D85945195FF78200EDA2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D85946195FF78200EDA2AA /* Build configuration list for PBXNativeTarget "MRCloudDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D85947195FF78200EDA2AA /* Debug */,
+				21D85948195FF78200EDA2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21D8590F195FF78200EDA2AA /* Project object */;
+}

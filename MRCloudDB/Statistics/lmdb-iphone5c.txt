@@ -1,0 +1,14 @@
+2015-11-13 13:12:17.286 MRCloudDB[591:109594] [INFO] DB create at path: /var/mobile/Containers/Data/Application/705517F1-A8B8-4BD6-B1B1-52AAB909F757/Library/Caches/tree-3-469102337
+2015-11-13 13:12:47.438 MRCloudDB[591:109594] tree generation time: 15.237448
+2015-11-13 13:13:11.370 MRCloudDB[591:109594] merge time: 23.348737
+2015-11-13 13:13:18.564 MRCloudDB[591:109594] lookup stats: 
+cursor lookup {
+    total: 1.578315
+    count: 111
+      avg: 0.014219
+}
+node lookup {
+    total: 3.903491
+    count: 111110
+      avg: 0.000035
+}

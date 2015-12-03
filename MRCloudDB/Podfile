@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '7.0'
+
+pod 'POSLevelDB', :git => 'https://github.com/pavelosipov/POSLevelDB.git', :submodules => true, :inhibit_warnings => true
+pod 'POSLMDB', :git => 'https://github.com/pavelosipov/POSLMDB.git', :submodules => true, :inhibit_warnings => true
+pod 'POSRx', :git => 'https://github.com/pavelosipov/POSRx.git'
+pod 'FMDB'
+
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SDKROOT'] = "iphoneos"
+            config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'NO'
+        end
+    end
+end
